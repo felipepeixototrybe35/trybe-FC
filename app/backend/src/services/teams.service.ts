@@ -6,7 +6,7 @@ export default class TeamService {
     const allTeams = await this.model.findAll();
     return allTeams;
   }
-  
+
   async getById(id: number) {
     const teamById = await this.model.findByPk(id);
     return teamById;
