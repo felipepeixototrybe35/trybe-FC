@@ -2,14 +2,6 @@ import { DataTypes, Model } from 'sequelize';
 import db from '.';
 import IUsers from '../../Interfaces/IUsers';
 
-// interface UserAttributes {
-//   id: number;
-//   username: string;
-//   role: 'admin' | 'user';
-//   email: string;
-//   password: string;
-// }
-
 class UserModel extends Model<IUsers> implements IUsers {
   declare id: number;
   declare username: string;
